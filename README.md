@@ -8,10 +8,9 @@ This is a repository with a rails project template.
 * Rails 5.1
 * Rspec 3
 * Haml views
-* Dotenv
 * Yarn to manage javascript dependencies 
-** Jquery
-** Boostrap 4
+* Jquery
+* Boostrap 4
 
 We also did dockerization of this application. You can check the configuration in the file:
 
