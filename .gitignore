@@ -42,3 +42,9 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore .env file 
+.env
+
+# Ignore config/database.yml
+/config/database.yml
