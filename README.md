@@ -13,7 +13,8 @@ This is a repository with a rails project template.
 * Jquery
 * Boostrap 4
 
-We also did dockerization of this application. You can check the configuration in the file:
+# Docker
+This application is dockerized. You can check two files regarding this configuration:
 
 * Dockerfile
 * docker-compose.yml
