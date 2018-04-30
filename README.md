@@ -29,7 +29,11 @@ First, you need to make sure you have installed in your machine the topics below
 * Docker;
 * Git
 
-If you've installed these tools in your computer, you can clone the repository and run `docker-compose up --build`.
+If you've installed these tools in your computer, you can clone the repository to your machine.
+
+* Don't forget to rename the file `.env.sample` to `.env`
+* Don't forget to rename the file `config/database.sample.yml` to `config/database.yml`
+* Run `docker-compose up --build`.
 
 If you decide to rename the projects folder don't forget to update the Dockerfile with the new folder name.
 
