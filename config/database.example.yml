@@ -2,15 +2,15 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: postgres
+  username: <%= ENV["POSTGRES_USER"] %>
   password:
   timeout: 5000
 
 development:
   <<: *default
-  database: all_for_jesus_development
+  database: <%= "#{ ENV["POSTGRES_DATABASE"] }_development" %>
 
 
 test:
   <<: *default
-  database: all_for_jesus_development
+  database: database: <%= "#{ ENV["POSTGRES_DATABASE"] }_test" %>
