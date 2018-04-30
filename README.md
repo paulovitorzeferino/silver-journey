@@ -1,24 +1,20 @@
-# README
+# Rails Project Template
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a repository with a rails project template.
 
-Things you may want to cover:
+What are we using here?
 
-* Ruby version
+* Ruby 2.3.3
+* Rails 5.1
+* Rspec 3
+* Haml views
+* Dotenv
+* Yarn to manage javascript dependencies 
+* Jquery
+* Boostrap 4
 
-* System dependencies
+We also did dockerization of this application. You can check the configuration in the file:
 
-* Configuration
+* Dockerfile
+* docker-compose.yml
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
