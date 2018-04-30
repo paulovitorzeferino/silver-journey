@@ -1,0 +1,37 @@
+version: '2'
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+  web:
+    build: .
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    volumes:
+      - .:/storystreetlabs
+    ports:
+      - "3000:3000"
+    # Adding tty and stdin_open for binding.pry
+    tty: true
+    stdin_open: true
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD:
+      MEMCACHED_HOST: memcached
+    depends_on:
+      - db
+      - redis
+      - memcache
+  redis:
+    image: redis:2.8
+    ports:
+      - '6379:6379'
+    volumes:
+      - redis:/data
+  memcache:
+    image: memcached:1.5-alpine
+
+volumes:
+  redis:
