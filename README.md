@@ -19,3 +19,17 @@ This application is dockerized. You can check two files regarding this configura
 * Dockerfile
 * docker-compose.yml
 
+# I want to use what should I do?
+
+First, you need to make sure you have installed in your machine the topics below:
+
+* Rvm;
+* Ruby 2.3.3;
+* Postgresql;
+* Docker;
+* Git
+
+If you've installed these tools in your computer, you can clone the repository and run `docker-compose up --build`.
+
+If you decide to rename the projects folder don't forget to update the Dockerfile with the new folder name.
+
