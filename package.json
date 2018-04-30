@@ -1,5 +1,10 @@
 {
   "name": "silver-journey",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:paulovitorzeferino/silver-journey.git",
+  "author": "Paulo Moncores <paulo.santos-zeferino@blacklane.com>",
+  "license": "MIT"
 }
