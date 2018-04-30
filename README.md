@@ -7,6 +7,7 @@ This is a repository with a rails project template.
 * Ruby 2.3.3
 * Rails 5.1
 * Rspec 3
+* PostgreSQL for database
 * Haml views
 * Yarn to manage javascript dependencies 
 * Jquery
